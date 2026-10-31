@@ -1,0 +1,555 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+header {
+    background: #111827;
+    padding: 20px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #38bdf8;
+    font-size: 28px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #38bdf8;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.welcome {
+    color: #38bdf8;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #38bdf8;
+}
+
+.hero h3 {
+    color: #cbd5e1;
+    margin-bottom: 20px;
+}
+
+.hero-content > p:not(.welcome) {
+    color: #94a3b8;
+    line-height: 1.8;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #38bdf8;
+    color: #0f172a;
+    padding: 13px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #0ea5e9;
+}
+
+.btn.secondary {
+    background: transparent;
+    color: white;
+    border: 1px solid #38bdf8;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111827;
+    color: #94a3b8;
+}
+/* RESUME PAGE */
+
+.resume-container {
+    width: 85%;
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+.resume-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.resume-heading h1 {
+    font-size: 42px;
+}
+
+.resume-heading h1 span {
+    color: #38bdf8;
+}
+
+.resume-heading p {
+    color: #94a3b8;
+    margin-top: 10px;
+}
+
+.resume-section {
+    margin-bottom: 30px;
+}
+
+.resume-section h2 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+    border-left: 4px solid #38bdf8;
+    padding-left: 12px;
+}
+
+.resume-card {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #334155;
+    line-height: 1.9;
+    color: #cbd5e1;
+}
+
+.resume-card h3 {
+    color: white;
+    margin-bottom: 12px;
+}
+
+.resume-card ul {
+    padding-left: 25px;
+}
+
+.resume-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.resume-table th,
+.resume-table td {
+    padding: 12px;
+    border: 1px solid #475569;
+    text-align: left;
+}
+
+.resume-table th {
+    background: #0f172a;
+    color: #38bdf8;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills-list span {
+    background: #0f172a;
+    color: #38bdf8;
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: 1px solid #38bdf8;
+}
+
+.resume-download {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.resume-download button {
+    background: #38bdf8;
+    color: #0f172a;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.resume-download button:hover {
+    background: #0ea5e9;
+}
+
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+
+    header, footer, .resume-download {
+        display: none;
+    }
+
+    .resume-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .resume-card {
+        background: white;
+        color: black;
+        border: 1px solid #ccc;
+        break-inside: avoid;
+    }
+
+    .resume-section h2,
+    .resume-card h3 {
+        color: #111;
+    }
+
+    .resume-heading h1 span {
+        color: #111;
+    }
+}
+
+/* BIO-DATA PAGE */
+
+.biodata-container {
+    width: 85%;
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+.biodata-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.biodata-heading h1 {
+    font-size: 42px;
+}
+
+.biodata-heading h1 span {
+    color: #38bdf8;
+}
+
+.biodata-heading p {
+    color: #94a3b8;
+    margin-top: 10px;
+}
+
+.biodata-section {
+    margin-bottom: 30px;
+}
+
+.biodata-section h2 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+    border-left: 4px solid #38bdf8;
+    padding-left: 12px;
+}
+
+.biodata-card {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #334155;
+    line-height: 2;
+    color: #cbd5e1;
+}
+
+.biodata-card strong {
+    color: #38bdf8;
+}
+
+.biodata-card ul {
+    padding-left: 25px;
+}
+
+.biodata-print {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.biodata-print button {
+    background: #38bdf8;
+    color: #0f172a;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.biodata-print button:hover {
+    background: #0ea5e9;
+}
+
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+
+    header, footer, .biodata-print {
+        display: none;
+    }
+
+    .biodata-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .biodata-card {
+        background: white;
+        color: black;
+        border: 1px solid #ccc;
+        break-inside: avoid;
+    }
+
+    .biodata-section h2,
+    .biodata-card strong,
+    .biodata-heading h1 span {
+        color: #111;
+    }
+}
+
+/* CONTACT PAGE */
+
+.contact-container {
+    width: 85%;
+    max-width: 850px;
+    margin: 50px auto;
+}
+
+.contact-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.contact-heading h1 {
+    font-size: 42px;
+}
+
+.contact-heading h1 span {
+    color: #38bdf8;
+}
+
+.contact-heading p {
+    color: #94a3b8;
+    margin-top: 10px;
+}
+
+.contact-card,
+.contact-form-section {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #334155;
+    margin-bottom: 30px;
+}
+
+.contact-card h2,
+.contact-form-section h2 {
+    color: #38bdf8;
+    margin-bottom: 20px;
+}
+
+.contact-card p {
+    color: #cbd5e1;
+    line-height: 2;
+}
+
+.contact-form-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-section label {
+    margin: 12px 0 8px;
+    color: #38bdf8;
+}
+
+.contact-form-section input,
+.contact-form-section textarea {
+    padding: 13px;
+    border: 1px solid #475569;
+    border-radius: 6px;
+    background: #0f172a;
+    color: white;
+    font-size: 15px;
+}
+
+.contact-form-section button {
+    margin-top: 20px;
+    padding: 14px;
+    background: #38bdf8;
+    color: #0f172a;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form-section button:hover {
+    background: #0ea5e9;
+}
+
+#formStatus {
+    margin-top: 15px;
+    color: #38bdf8;
+}
+
+@media (max-width: 600px) {
+    .contact-container {
+        width: 92%;
+    }
+}
+/* LIVE CLOCK DESIGN */
+
+#liveClock {
+    text-align: center;
+    color: #38bdf8;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px;
+    background: #111827;
+    border-top: 1px solid #334155;
+}
+
+
+/* =================================
+   RESPONSIVE DESIGN
+   ================================= */
+
+/* Tablets and smaller laptops */
+@media screen and (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 0;
+    }
+
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .contact-container {
+        width: 92%;
+    }
+
+    .contact-card,
+    .contact-form-section {
+        padding: 20px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+}
+
+/* Mobile phones */
+@media screen and (max-width: 480px) {
+
+    nav ul {
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .hero h3 {
+        font-size: 17px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .contact-heading h1 {
+        font-size: 30px;
+    }
+
+    .contact-card,
+    .contact-form-section {
+        padding: 15px;
+    }
+
+    input,
+    textarea {
+        max-width: 100%;
+    }
+
+    #liveClock {
+        font-size: 12px;
+        padding: 12px 5px;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 13px;
+        padding: 15px;
+    }
+}
