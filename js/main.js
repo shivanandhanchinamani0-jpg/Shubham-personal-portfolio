@@ -1,6 +1,6 @@
 // Display welcome message
 window.addEventListener("load", function () {
-    alert("Welcome to Shubham's Personal Portfolio!");
+    alert("Welcome to Shivanand's Personal Portfolio!");
 });
 
 // Live date and time
